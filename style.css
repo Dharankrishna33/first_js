@@ -82,4 +82,48 @@ body h1{
 	font-size:270%;
 	font-family: garamond;
 }	
-    
+@media only screen and(max-width:450px){
+	body{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#game-board {
+		width: 80%;
+		height: 44%;
+		border-radius: 3vw;
+	}
+	.balloon {
+		border-radius: 50%;
+		width: 14vw;
+		height: 6vh;
+		margin-right:2vw;
+		margin-top: 2vw;
+		cursor: pointer;
+		gap: 1vw;
+	}
+	body h1{
+		margin-bottom: 65px;
+		font-size:7vw;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-weight:900;
+	}
+	#reset-button {
+		margin-top: 50px;
+		padding: 1vw;
+		padding-right: 2vw;
+		padding-left: 2vw;
+		
+		font-size: 8vw;
+		border-radius: 2vw;
+	 }
+	 #reset-button:hover{
+		background-color: black;
+		color: white;
+		}
+		#game-board pre {
+			font-size: 5vw;
+		}
+}    
